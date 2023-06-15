@@ -97,9 +97,3 @@ When deploying the application, the following environment variables can be set:
 If you do not provide an OpenAI API key with `OPENAI_API_KEY`, users will have to provide their own key.
 
 If you don't have an OpenAI API key, you can get one [here](https://platform.openai.com/account/api-keys).
-
-## Contact
-
-If you have any questions, feel free to reach out to Mckay on [Twitter](https://twitter.com/mckaywrigley).
-
-[GCSE]: https://developers.google.com/custom-search/v1/overview
