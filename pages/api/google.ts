@@ -25,8 +25,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse<any>) => {
         googleCSEId ? googleCSEId : process.env.GOOGLE_CSE_ID
       }&q=${query}&num=5`,
     );
-
-
+    const googleData = await googleRes.json();
     const sources: GoogleSource[] = googleData.items.map((item: any) => ({
       title: item.title,
       link: item.link,
