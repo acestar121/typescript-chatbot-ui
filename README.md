@@ -8,7 +8,6 @@ Chatbot UI is an open source chat UI for AI models.
 
 Chatbot UI will be updated over time.
 
-Expect frequent improvements.
 
 **Next up:**
 
