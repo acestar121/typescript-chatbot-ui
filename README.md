@@ -8,8 +8,8 @@ Chatbot UI is an open source chat UI for AI models.
 
 Chatbot UI will be updated over time.
 
-Expect frequent improvements.
 
+Expect frequent improvements.
 **Next up:**
 
 - [ ] Sharing
@@ -21,6 +21,7 @@ Expect frequent improvements.
 
 Host your own live version of Chatbot UI with Vercel.
 
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fmckaywrigley%2Fchatbot-ui)
 
 **Docker**
 
@@ -34,6 +35,7 @@ docker run -e OPENAI_API_KEY=xxxxxxxx -p 3000:3000 chatgpt-ui
 Pull from ghcr:
 
 ```
+
 docker run -e OPENAI_API_KEY=xxxxxxxx -p 3000:3000 ghcr.io/mckaywrigley/chatbot-ui:main
 ```
 
@@ -56,6 +58,7 @@ npm i
 Create a .env.local file in the root of the repo with your OpenAI API Key:
 
 ```bash
+
 OPENAI_API_KEY=YOUR_KEY
 ```
 
