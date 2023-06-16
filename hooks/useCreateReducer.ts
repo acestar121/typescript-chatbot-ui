@@ -5,6 +5,7 @@ export type FieldNames<T> = {
   [K in keyof T]: T[K] extends string ? K : K;
 }[keyof T];
 
+// Returns the Action Type for the dispatch object to be used for typing in things like context
 export type ActionType<T> =
   | { type: 'reset' }
   | { type?: 'change'; field: FieldNames<T>; value: any };
