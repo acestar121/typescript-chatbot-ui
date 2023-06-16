@@ -21,6 +21,4 @@ function App({ Component, pageProps }: AppProps<{}>) {
     </div>
   );
 }
-
-
 export default appWithTranslation(App);
