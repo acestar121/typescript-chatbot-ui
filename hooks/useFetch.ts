@@ -1,7 +1,6 @@
 export type RequestModel = {
   params?: object;
   headers?: object;
-  signal?: AbortSignal;
 };
 
 export type RequestWithBodyModel = RequestModel & {
