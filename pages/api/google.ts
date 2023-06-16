@@ -26,7 +26,6 @@ const handler = async (req: NextApiRequest, res: NextApiResponse<any>) => {
       }&q=${query}&num=5`,
     );
 
-    const googleData = await googleRes.json();
 
     const sources: GoogleSource[] = googleData.items.map((item: any) => ({
       title: item.title,
