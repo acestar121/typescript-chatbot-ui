@@ -16,7 +16,6 @@ function App({ Component, pageProps }: AppProps<{}>) {
     <div className={inter.className}>
       <Toaster />
       <QueryClientProvider client={queryClient}>
-        <Component {...pageProps} />
       </QueryClientProvider>
     </div>
   );
