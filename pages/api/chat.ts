@@ -38,7 +38,7 @@ const handler = async (req: Request): Promise<Response> => {
     let tokenCount = prompt_tokens.length;
     let messagesToSend: Message[] = [];
 
-    for (let i = messages.length - 1; i >= 0; i--) {
+    for (let i = messages.length - 1; i >= 0; --i) {
       const message = messages[i];
       const tokens = encoding.encode(message.content);
 
@@ -54,6 +54,7 @@ const handler = async (req: Request): Promise<Response> => {
     const stream = await OpenAIStream(model, promptToSend, temperatureToUse, key, messagesToSend);
 
     return new Response(stream);
+    
   } catch (error) {
     console.error(error);
     if (error instanceof OpenAIError) {
